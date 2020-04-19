@@ -6,8 +6,6 @@ import { Model } from 'mongoose'
 
 @Injectable()
 export class FoodsService {
-  private readonly foods: Food[] = []
-
   constructor(@InjectModel('Food') private foodModel: Model<Food>) {}
 
   async create(createFoodDto: CreateFoodDto): Promise<Food> {
