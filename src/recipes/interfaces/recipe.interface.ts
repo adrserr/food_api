@@ -1,4 +1,3 @@
-import { Food } from '../../foods/interfaces/food.interface'
 import { Document } from 'mongoose'
 
 export interface Recipe extends Document {

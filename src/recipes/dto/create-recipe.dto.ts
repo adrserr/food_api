@@ -1,5 +1,3 @@
-import { Food } from './../../foods/interfaces/food.interface'
-
 export class CreateRecipeDto {
   title: string
   picture: string
