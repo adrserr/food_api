@@ -13,7 +13,7 @@ export class RecipesController {
   }
 
   @Post()
-  async crreate(@Body() createRecipeDto: CreateRecipeDto) {
+  async create(@Body() createRecipeDto: CreateRecipeDto) {
     this.recipeService.create(createRecipeDto)
   }
 }
