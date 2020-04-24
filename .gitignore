@@ -16,6 +16,9 @@ lerna-debug.log*
 # Enviroment files
 .env 
 
+# Secrets
+./secrets
+
 # Tests
 /coverage
 /.nyc_output
