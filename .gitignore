@@ -17,7 +17,7 @@ lerna-debug.log*
 .env 
 
 # Secrets
-./secrets
+secrets/*
 
 # Tests
 /coverage
@@ -38,3 +38,5 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+
