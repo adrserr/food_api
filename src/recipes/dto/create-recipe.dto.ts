@@ -1,16 +1,33 @@
-export class CreateRecipeDto {
-  title: string
-  picture: string
+import { ApiProperty } from '@nestjs/swagger'
+
+class Step {
+  @ApiProperty()
+  number: number
+  @ApiProperty()
   description: string
+}
+
+class Ingredient {
+  @ApiProperty()
+  food: string
+  @ApiProperty()
+  quantity: number
+}
+export class CreateRecipeDto {
+  @ApiProperty()
+  title: string
+  @ApiProperty()
+  picture: string
+  @ApiProperty()
+  description: string
+  @ApiProperty()
   dificulty: number
+  @ApiProperty()
   portions: number
+  @ApiProperty()
   time: number
-  ingredients: {
-    food: string
-    quantity: number
-  }[]
-  steps: {
-    number: number
-    description: string
-  }[]
+  @ApiProperty({ type: [Ingredient] })
+  ingredients: Ingredient[]
+  @ApiProperty({ type: [Step] })
+  steps: Step[]
 }
